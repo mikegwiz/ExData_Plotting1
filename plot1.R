@@ -12,7 +12,7 @@ data <- data %>% filter(Date == "1/2/2007" | Date == "2/2/2007")
 # Convert date and time variables from factors in a new variable "datetime"
 data$datetime <- strptime(paste(as.character(data$Date), as.character(data$Time), sep = "."), format = "%d/%m/%Y.%H:%M:%S")
 
-# Create Plot 1
+# Create Plot 1 to png device
 plotdata <- as.numeric(as.character(data$Global_active_power))
 
 png("plot1.png")
