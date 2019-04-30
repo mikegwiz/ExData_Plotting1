@@ -1,4 +1,4 @@
-## This script creates the second plot in the Exploratoty Data Analysis Week 1 Assignment
+## This script creates the second plot in the Exploratoty Data Analysis Week 2 Assignment
 
 library(dplyr)
 
@@ -12,7 +12,7 @@ data <- data %>% filter(Date == "1/2/2007" | Date == "2/2/2007")
 # Convert date and time variables from factors in a new variable "datetime"
 data$datetime <- strptime(paste(as.character(data$Date), as.character(data$Time), sep = "."), format = "%d/%m/%Y.%H:%M:%S")
 
-# Create Plot 2
+# Create Plot 2 to png device
 ydata <- as.numeric(as.character(data$Global_active_power))
 xdata <- data$datetime
 
