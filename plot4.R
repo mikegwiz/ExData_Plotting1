@@ -25,8 +25,8 @@ xdata2 <- as.numeric(as.character(data$Sub_metering_2))
 # Makes plot in png device
 png("plot4.png")
 
-  # Sets the 2 by 2 plot environment and sets margins
-par(mfrow = c(2,2), mar = c(4,4,1,1))
+  # Sets the 2 by 2 plot environment
+par(mfrow = c(2,2))
 
   # Upperleft plot
 plot(xdata, ydata1, type = "l", ylab = "Global Active Power", xlab = "")
