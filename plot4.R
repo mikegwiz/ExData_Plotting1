@@ -22,8 +22,6 @@ xdata <- data$datetime
 xdata1 <- as.numeric(as.character(data$Sub_metering_1))
 xdata2 <- as.numeric(as.character(data$Sub_metering_2))
 
-table(data$Global_reactive_power == "?")
-
 # Makes plot in png device
 png("plot4.png")
 
